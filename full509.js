@@ -256,7 +256,6 @@ function subjectAltName(data) {
   const params = data.map(([type, value]) => {
     if (type == 'iPAddress') return tripletBuilder(context(gnType[type], false), ipAltName(value))
     else return tripletBuilder(context(gnType[type], false), toHex(value))
-
   })
 
   return tripletBuilder(tag.SEQUENCE, [
@@ -431,7 +430,6 @@ function oidBuilder(data) {
       if (i < a.length - 1) return toHex(b |= 1 << 7)
       return toHex(b)
     }).join('')
-
   }
 }
 
@@ -531,7 +529,6 @@ function getTbs(buff) {
 }
 
 function getKeys(buff) {
-
   const param = [
     {format: 'pem'},
     //{format: 'jwk'}, // v8 exception
