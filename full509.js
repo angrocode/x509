@@ -62,7 +62,7 @@ export function local509(params) {
       : []
 
     if (Object.keys(param).filter(k => keys.includes(k)).length != keys.length)
-      throw new Error(`${subj}: required fields are missing, \nrequired: 555${keys.toString()}`)
+      throw new Error(`${subj}: required fields are missing, \nrequired: ${keys.toString()}`)
     if (!hashKeys.includes(/\d+/.exec(param.sign)?.[0])) 
       throw new Error(`${subj}: only sha: ${hashKeys.toString()} is supported`)
     if (param?.issuer && Object.keys(param.issuer).filter(k => !subjectKeys.includes(k)).length)
