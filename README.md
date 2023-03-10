@@ -102,6 +102,12 @@ cert: <b>string</b> сертификат в pem формате
     notBefore: '2020-12-12',
     notAfter: '2033-12-12',
   },
+  issuer: {
+    countryName: 'EA',
+    stateOrProvinceName: 'EARTH',
+    organizationName: 'DO_NOT_TRUST', 
+    commonName: 'DO_NOT_TRUST_LOCAL_ROOT',
+  },
   subject: {
     countryName: 'EA',
     stateOrProvinceName: 'EARTH',
