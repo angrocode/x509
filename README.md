@@ -15,16 +15,12 @@ cert: <b>string</b> сертификат в pem формате
 ### full509
 Более полная реализация поддерживающая версию 3, генерацию полей в issuer и subject, ограниченную реализацию extensions.
 
-<br>
-<blockquote style="background:#555302; color: white">
-  <br>
-    <p>Ограничения</p>
-    1. В extensions доступны только altName<br>
-    2. В altName реализованны: dNSName, iPAddress, rfc822Name, uniformResourceIdentifier<br>
-    3. Подпись: sha 1, 256, 384, 512
-  <br><br>
-</blockquote>
-<br>
+
+$\color{orange} \textsf{\Large\&#x26A0} {} \textsf{\normalsize Ограничения}$
+
+1. В extensions доступны только altName<br>
+2. В altName реализованны: dNSName, iPAddress, rfc822Name, uniformResourceIdentifier<br>
+3. Подпись: sha 1, 256, 384, 512
 
 Возможны три сценария использования:
 
