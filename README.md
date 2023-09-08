@@ -16,7 +16,7 @@ cert: <b>string</b> сертификат в pem формате
 Более полная реализация поддерживающая версию 3, генерацию полей в issuer и subject, ограниченную реализацию extensions.
 
 
-$\color{orange} \textsf{\Large\&#x26A0} {} \textsf{\normalsize Ограничения}$
+$\color{orange} \textsf{\Large\&#x26A0} \ \textsf{\normalsize Ограничения}$
 
 1. В extensions доступны только altName<br>
 2. В altName реализованны: dNSName, iPAddress, rfc822Name, uniformResourceIdentifier<br>
