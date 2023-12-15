@@ -172,3 +172,8 @@ PREFIX_certificate.crt
 PREFIX_certificate.pem
 PREFIX_private.pem
 ```
+
+### установка сертификата (наброски)
+
+[хранилище](https://learn.microsoft.com/ru-ru/windows/win32/api/wincrypt/nf-wincrypt-certopensystemstorea) \
+[добавление](https://learn.microsoft.com/ru-ru/windows/win32/api/wincrypt/nf-wincrypt-certaddencodedcertificatetostore)
