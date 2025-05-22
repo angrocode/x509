@@ -16,7 +16,7 @@ cert: <b>string</b> сертификат в pem формате
 Более полная реализация поддерживающая версию 3, генерацию полей в issuer и subject, ограниченную реализацию extensions.
 
 
-$\color{orange} \textsf{\Large\&#x26A0} \ \textsf{\normalsize Ограничения}$
+Ограничения
 
 1. В extensions доступны только altName<br>
 2. В altName реализованны: dNSName, iPAddress, rfc822Name, uniformResourceIdentifier<br>
@@ -35,7 +35,7 @@ $\color{orange} \textsf{\Large\&#x26A0} \ \textsf{\normalsize Ограничен
 {
   srv: {
     type: 'ecdsa',
-    curve: 'sect239k1',
+    curve: 'P-256',
     sign: 'SHA256',
     serial: 123,
     validity: {
@@ -89,7 +89,7 @@ $\color{orange} \textsf{\Large\&#x26A0} \ \textsf{\normalsize Ограничен
 ```js
 {
   type: 'ecdsa',
-  curve: 'sect239k1',
+  curve: 'P-256',
   sign: 'SHA256',
   serial: 123,
   validity: {
